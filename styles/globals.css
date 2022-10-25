@@ -22,9 +22,15 @@ a {
   text-decoration: none;
 }
 
+p{
+  font-size: 2rem;
+  font-weight: normal;
+}
 
 * {
   box-sizing: border-box;
+  font-family: 'HG正楷書体-PRO', 'HGSeikaishotaiPRO', '游教科書体', cursive;
+  color: #3C3C3C;
   line-height: 1;
 }
 
@@ -50,6 +56,96 @@ a {
 
 .sp_only{
   display: none;
+}
+
+/* header */
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8rem 0;
+  box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+  z-index: 1000;
+  background: white;
+}
+
+header h1{
+  margin-left: 16rem;
+}
+
+header nav{
+  margin-right: 20rem;
+}
+
+header nav ul li{
+  margin-left: 5.6rem;
+}
+
+header nav ul li a{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* sideNav */
+.sideNav{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  flex-direction: column;
+  transform: translateY(-50%);
+  padding: 2.4rem .8rem 2.6rem;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+}
+
+.sideNav div{
+  margin-bottom: 2.4rem;
+  position: relative;
+  padding-bottom: 1.2rem;
+}
+
+.sideNav div:last-child{
+  margin-bottom: 0;
+}
+
+.sideNav div::before{
+  position: absolute;
+  content: '';
+  width: 4.5rem;
+  height: .2rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #B4B4B4;
+  border-radius: 2rem;
+}
+
+.sideNav div a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sideNav div a p{
+  margin-bottom: .8rem;
+}
+
+.sideNav div:first-child a p, .sideNav div:nth-child(2) a p{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.sideNav div:nth-child(3) a p, .sideNav div:nth-child(4) a p{
+  font-size: 1.2rem;
+}
+
+main{
+  margin-top: 8rem;
 }
 
 @media screen and (max-width: 767px){

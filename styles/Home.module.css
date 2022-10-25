@@ -1,3 +1,4 @@
 .mv{
-  height: calc(100vh - 22.4rem);
+  height: calc(100vh - 15.4rem);
+  overflow: hidden;
 }
