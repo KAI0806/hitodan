@@ -9,7 +9,7 @@ export default function mvSlider() {
         dots: false,
         infinite: true,
         autoplay: true,
-        speed: 1500,
+        speed: 2000,
         autoplaySpeed: 5000,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -20,15 +20,18 @@ export default function mvSlider() {
     };
 
     return (
-      <Slider {...settings}>
+      <Slider className="mv_slider" {...settings}>
             <div>
-                <Image src="/images/top/mv_bg01.webp" width='100%' height='auto'/>
+                <Image className="pc_only" src="/images/top/mv_bg01.webp" width='auto' height='100%'/>
+                <Image className="sp_only" src="/images/top/mv_bg01_sp.webp" width='auto' height='100%'/>
             </div>
             <div>
-                <Image src="/images/top/mv_bg02.webp" width='100%' height='auto'/>
+                <Image className="pc_only" src="/images/top/mv_bg02.webp" width='auto' height='100%'/>
+                <Image className="sp_only" src="/images/top/mv_bg02_sp.webp" width='auto' height='100%'/>
             </div>
             <div>
-                <Image src="/images/top/mv_bg03.webp" width='100%' height='auto'/>
+                <Image className="pc_only" src="/images/top/mv_bg03.webp" width='auto' height='100%'/>
+                <Image className="sp_only" src="/images/top/mv_bg03_sp.webp" width='auto' height='100%'/>
             </div>
       </Slider>
     );

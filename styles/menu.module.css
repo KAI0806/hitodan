@@ -1,0 +1,325 @@
+.kv{
+    height: 10.6rem;
+    background: url('/images/menu/kv.webp') no-repeat center center/cover;
+}
+
+.content01{
+    padding: 8rem 0 10rem;
+    margin: auto;
+    background: url('/images/top/about_bg.webp') no-repeat center center/cover;
+}
+
+.content01 .wrap{
+    width: 75%;
+    justify-content: space-between;
+}
+
+.content01 .wrap > div{
+    width: 45%;
+}
+
+.content01 .wrap .left {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.content01 .wrap .left h2{
+    background: white;
+    padding: 8.6rem 2rem;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-family: shinryu, sans-serif;
+    font-size: 4.3rem;
+    position: relative;
+}
+
+.content01 .wrap .left h2::before{
+    position: absolute;
+    content: '本格炭火居酒屋';
+    font-size: 2.4rem;
+    top: 0;
+    right: -50%;
+    transform: translate(100%, 50%);
+    z-index: 10;
+}
+
+.content01 .wrap .left img{
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+}
+
+.content01 .wrap .right{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content01 .wrap .right p{
+    width: 78%;
+    line-height: 1.5;
+}
+
+/* container */
+.container .title{
+    padding: 7rem 0;
+    background: url('/images/top/menu_bg.webp') no-repeat center center/cover;
+}
+
+.container .title .wrap{
+    padding: 8rem 0;
+    background: url('/images/menu/title_bg.webp') no-repeat center center/cover;
+}
+
+.container .title .wrap > div{
+    width: 37.5%;
+}
+
+.container .title .wrap .left h3{
+    font-size: 3rem;
+    color: white;
+    padding: 2.45rem 0;
+    text-align: center;
+    width: 52.7rem;
+    font-family: shinryu, sans-serif;
+    background: linear-gradient(to right, #C24B4B, #8B4545);
+}
+
+.container .title .wrap .right{
+    position: relative;
+}
+
+.container .title .wrap .right img{
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, 50%);
+}
+
+.container .title .wrap .right img:first-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0, -20%);
+}
+
+.container .contain{
+    margin: auto;
+    flex-direction: column;
+    padding: 10.3rem 0 7.2rem;
+    background: #F2EEE6;
+}
+
+.container .contain .category h2{
+    font-size: 4.8rem;
+    padding-right: 5rem;
+    margin-right: 5rem;
+    border-right: .1rem solid #3C3C3C;
+}
+
+.container .contain .wrap{
+    margin: 5.6rem 0 4rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 58.75%;
+}
+
+.container .contain .wrap .content{
+    width: 30%;
+    background: white;
+    margin-bottom: 4rem;
+}
+
+.container .contain .wrap .content:nth-child(4), .container .contain .wrap .content:nth-child(5), .container .contain .wrap .content:nth-child(6){
+    margin-bottom: 0;
+}
+
+.container .contain .wrap .content .txt{
+    padding: 3.2rem 3rem;
+}
+
+.container .contain .wrap .content .txt div{
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 1.5rem 1.8rem;
+    margin-bottom: 2.4rem;
+    border-bottom: .1rem dashed #3C3C3C;
+}
+
+.container .contain .wrap .content .txt div h4{
+    font-size: 3.2rem;
+}
+
+.container .contain .wrap .content .txt p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.container .contain > a{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 2rem;
+}
+
+/* other */
+.container:nth-child(4) .title{
+    background: url('/images/top/about_bg.webp');
+}
+
+@media screen and (max-width: 767px){
+    .kv{
+        height: 10.6rem;
+        background: url('/images/menu/kv_sp.webp') no-repeat center center/cover;
+    }
+
+    .content01{
+        padding: 5.4rem 0 3.6rem;
+    }
+
+    .content01 .wrap{
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .content01 .wrap > div{
+        width: 100%;
+    }
+
+    .content01 .wrap .left{
+        margin-bottom: 3.2rem;
+    }
+
+    .content01 .wrap .left h2{
+        font-size: 2.4rem;
+        padding: 2rem 1rem;
+    }
+
+    .content01 .wrap .left h2::before{
+        font-size: 1.2rem;
+        top: 25%;
+    }
+
+    .content01 .wrap .left img{
+        width: 21.1rem;
+        height: 15.9rem;
+    }
+
+    .content01 .wrap .right p{
+        width: 100%;
+    }
+
+    .content01 .wrap .right h3{
+        font-size: 2.4rem;
+        margin: 4rem 0 1.8rem;
+    }
+
+    .content01 .wrap .right h3::before{
+        width: 50%;
+    }
+
+    .container .title{
+        padding: 0;
+        background: none;
+    }
+
+    .container .title .wrap{
+        background: none;
+        width: 85%;
+        margin: auto;
+        padding-bottom: 0;
+    }
+
+    .container .title .wrap .left{
+        width: 20%;
+    }
+
+    .container .title .wrap .left h3{
+        height: max-content;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        width: unset;
+        padding: 2rem 1rem;
+        position: relative;
+        z-index: 20;
+    }
+
+    .container .title .wrap .right{
+        width: 80%;
+    }
+
+    .container .title .wrap .right img:nth-child(2){
+        width: 26rem;
+    }
+
+    .container .title .wrap .right img:first-child{
+        width: 16rem;
+        top: unset;
+        bottom: 0;
+        transform: translate(-45%, 30%);
+    }
+
+    .container .contain{
+        padding: 0;
+        padding-bottom: 2.4rem;
+    }
+
+    .container .contain .category{
+        width: 85%;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: -4rem;
+    }
+
+    .container .contain .category h2{
+        padding-right: 0;
+        margin-right: 0;
+        border-right: none;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: .2rem dashed #3C3C3C;
+    }
+
+    .container .contain .category p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .contain .wrap{
+        margin-top: 3rem;
+        width: 85%;
+        margin-bottom: 1.8rem;
+    }
+
+    .container .contain .wrap .content{
+        width: 47%;
+    }
+
+    .container .contain .wrap .content .txt{
+        padding: 2.3rem 1rem;
+    }
+
+    .container .contain .wrap .content .txt div{
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 1.4rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .container .contain .wrap .content .txt div h4{
+        font-size: 2.4rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    .container .contain .wrap .content .txt div p{
+        font-size: 1.6rem;
+    }
+
+    .container .contain .wrap .content .txt p{
+        font-size: 1.4rem;
+    }
+
+    .container .contain .wrap .content:nth-child(4){
+        margin-bottom: 4rem;
+    }
+
+    .container .contain > a{
+        font-size: 1.4rem;
+        margin-left: 50%;
+    }
+}

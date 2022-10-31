@@ -1,4 +1,705 @@
+/* mv */
+
 .mv{
-  height: calc(100vh - 15.4rem);
+  height: calc(100vh - 15.5rem);
   overflow: hidden;
+  position: relative;
+}
+
+.mv h2{
+  position: absolute;
+  left: 18rem;
+  top: 50%;
+  height: max-content;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 5.5rem;
+  font-family: shinryu, sans-serif;
+  font-weight: 500;
+  color: white;
+  line-height: 1.5;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 47%);
+}
+
+.mv .btn{
+  position: absolute;
+  bottom: 4.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.mv_info{
+  align-items: center;
+  background: #C54848;
+  padding: 2.4rem 0;
+  font-weight: bold;
+}
+
+.mv_info > div{
+  align-items: center;
+}
+
+.mv_info h3{
+  color: white;
+  font-size: 1.8rem;
+  margin-left: 17.2rem;
+}
+
+.mv_info p{
+  margin: 0 4rem;
+  font-family: serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.mv_info h4{
+  font-size: 1.8rem;
+  color: white;
+  margin-right: 3.2rem;
+}
+
+.mv_info path{
+  color: white;
+}
+
+/* about */
+.about{
+  margin: auto;
+  padding: 10.16rem 0 11.15rem;
+  background: url('/images/top/about_bg.webp') no-repeat center center/cover;
+}
+
+.about .wrap{
+  width: 75%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.about .wrap > div{
+  width: 50%;
+}
+
+.about .left{
+  position: relative;
+}
+
+.about .left::before{
+  position: absolute;
+  content: '本格炭火焼居酒屋';
+  font-family: shinryu, sans-serif;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 2.4rem;
+  right: -2.4rem;
+  top: 50%;
+  transform: translate(100%, -50%);
+}
+
+.about .left h2{
+  position: absolute;
+  left: 2.4rem;
+  top: -5.8rem;
+  font-size: 4rem;
+  font-family: shinryu, sans-serif;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  background: white;
+  padding: 3.2rem 2rem;
+}
+
+.about .left img{
+  margin-left: 7.4rem;
+}
+
+.about .right{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.about .right p{
+  width: 72%;
+  line-height: 1.8;
+  margin-bottom: 7.2rem;
+}
+
+.white_btn{
+  font-size: 2.4rem;
+  width: 23rem;
+  text-align: center;
+  padding: 2.26rem 5.15rem 3.14rem 5.75rem;
+  box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+  background: url('/images/top/more_bg.svg') no-repeat center center/100%;
+}
+
+/* menu */
+.menu{
+  padding-top: 7.2rem;
+  flex-direction: column;
+  background: url('/images/top/menu_bg.webp') no-repeat center center/cover;
+}
+
+.menu .title{
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin-bottom: 5.4rem;
+}
+
+.menu .title h3{
+  color: white;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 1.8rem;
+  font-family: serif;
+  margin-left: 2rem;
+}
+
+.menu .title h2{
+  color: white;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 4rem;
+  font-family: shinryu, sans-serif;
+}
+
+.menu .wrap{
+  width: 60%;
+  justify-content: space-between;
+  margin-bottom: 6.4rem;
+}
+
+.menu .wrap > div{
+  width: 25.76rem;
+  height: 30.58rem;
+}
+
+.menu .wrap > div:first-child{
+  background: url('/images/top/menu01.webp') no-repeat center center/cover;
+}
+
+.menu .wrap > div:nth-child(2){
+  background: url('/images/top/menu02.webp') no-repeat center center/cover;
+}
+
+.menu .wrap > div:nth-child(3){
+  background: url('/images/top/menu03.webp') no-repeat center center/cover;
+}
+
+.menu .wrap > div:nth-child(4){
+  background: url('/images/top/menu04.webp') no-repeat center center/cover;
+}
+
+.menu .wrap > div p{
+  font-size: 5.8rem;
+  font-family: shinryu, sans-serif;
+  color: white;
+  text-shadow: 0 .3rem .1rem rgba(0, 0, 0, 40%);
+}
+
+.menu .reserve{
+  margin-top: 9.8rem;
+  padding: 6.64rem 0;
+  width: 100%;
+  background: url('/images/top/reserve_bg.webp') no-repeat center center/cover;
+}
+
+.menu .reserve > div{
+  width: 60%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu .reserve > div h3{
+  color: white;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 3rem;
+  font-family: shinryu, sans-serif;
+  line-height: 1.5;
+}
+
+.menu .reserve > div h3 span{
+  font-size: 4.1rem;
+  color: white;
+}
+
+/* concept */
+.concept{
+  padding: 9.7rem 0 22.6rem;
+  background: #F2EEE6;
+  position: relative;
+}
+
+.concept::before{
+  position: absolute;
+  content: '';
+  width: 28.8rem;
+  height: 24rem;
+  bottom: 0;
+  right: 20rem;
+  transform: scaleX(-100%);
+  background: url('/images/top/concept_bg.svg') no-repeat center center/100%;
+}
+
+.concept .wrap{
+  width: 66%;
+}
+
+.concept .wrap > div{
+  width: 50%;
+}
+
+.concept .wrap .left{
+  position: relative;
+  height: 49rem;
+  background: url('/images/top/concept_bg.svg') no-repeat center center/contain;
+}
+
+.concept .wrap .left h2{
+  position: absolute;
+  top: 50%;
+  left: 1.54rem;
+  transform: translate(-100%, -50%);
+  height: max-content;
+  font-size: 4.4rem;
+  color: white;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-family: shinryu, sans-serif;
+  padding: 5.4rem 1.6rem;
+  z-index: 30;
+  background: linear-gradient(to bottom, #C24B4B, #8B4545);
+}
+
+.concept .wrap .left img{
+  position: absolute;
+}
+
+.concept .wrap .left img:nth-child(2){
+  top: 0;
+  left: -3rem;
+  z-index: 20;
+}
+
+.concept .wrap .left img:nth-child(3){
+  top: 11rem;
+  left: 15.46rem;
+}
+
+.concept .wrap .right p{
+  width: 80%;
+  line-height: 2;
+}
+
+/* takeOut */
+.takeOut{
+  margin: auto;
+  padding: 9.8rem 0;
+  background: url('/images/top/menu_bg.webp') no-repeat center center/cover;
+}
+
+.takeOut .wrap{
+  width: 75%;
+  align-items: flex-end;
+}
+
+.takeOut .wrap > div{
+  width: 50%;
+}
+
+.takeOut .wrap .left{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.takeOut .wrap .left .title{
+  align-items: flex-start;
+}
+
+.takeOut .wrap .left .title h3{
+  color: white;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-family: serif;
+  font-size: 2.4rem;
+  margin-left: 1rem;
+}
+
+.takeOut .wrap .left .title h2{
+  color: white;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-family: shinryu, sans-serif;
+  font-size: 4.4rem;
+}
+
+.takeOut .wrap .left p{
+  color: white;
+  width: 70%;
+  line-height: 2;
+}
+
+.takeOut .wrap .right{
+  position: relative;
+  align-items: flex-end;
+}
+
+.takeOut .wrap .right img{
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.takeOut .wrap .right a{
+  color: white;
+}
+
+/* news */
+.news{
+  margin: auto;
+  padding: 9.4rem 0 9.6rem;
+  background: url('/images/top/about_bg.webp') no-repeat center center/cover;
+}
+
+.news .wrap{
+  width: 66%;
+  flex-direction: column;
+}
+
+.news .wrap .title h2{
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 4rem;
+  font-family: shinryu, sans-serif;
+  margin-left: 2rem;
+}
+
+.news .wrap .title h3{
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-size: 1.8rem;
+  font-family: serif;
+}
+
+.news .wrap .content{
+  width: 100%;
+  justify-content: space-between;
+  margin: 4.8rem 0 7.2rem;
+}
+
+.news .wrap .content .outer{
+  width: 30%;
+  padding: 3.6rem;
+  background: white;
+}
+
+.news .wrap .content .outer div{
+  width: 100%;
+  height: 18rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+
+.news .wrap .content .outer div img{
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.news .wrap .content .outer div p{
+  position: relative;
+  z-index: 10;
+  font-size: 1.8rem;
+  font-family: serif;
+  margin-bottom: .8rem;
+  padding-left: 1.8rem;
+}
+
+.news .wrap .content .outer div h3{
+  position: relative;
+  font-size: 1.8rem;
+  z-index: 10;
+  padding-left: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+
+@media screen and (max-width: 767px){
+  .mv{
+    height: calc(100vh - 10rem);
+  }
+  
+  .mv h2{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.8rem;
+  }
+  
+  .mv .btn{
+    bottom: 1.8rem;
+  }
+
+  .mv_info{
+    padding: 2.4rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mv_info h3{
+    margin-left: 0;
+    font-size: 1.6rem;
+    margin-bottom: 2.3rem;
+  }
+
+  .mv_info > div{
+    align-items: flex-start;
+  }
+
+  .mv_info p{
+    margin: 0 2.3rem 0 0 ;
+  }
+
+  .mv_info h4{
+    margin-right: 1.3rem;
+  }
+
+  /* about */
+  .about{
+    padding: 9.6rem 0 3.2rem;
+  }
+
+  .about .wrap{
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .wrap > div{
+    width: 100%;
+  }
+
+  .about .left{
+    margin-bottom: 3rem;
+  }
+
+  .about .left::before{
+    content: '本格炭火焼居酒屋';
+    font-size:1.2rem;
+    right: unset;
+    left: 0;
+    top: 50%;
+    height: max-content;
+    transform: translate(0, -50%);
+  }
+  
+  .about .left h2{
+    left: unset;
+    right: 2rem;
+    top: -5.8rem;
+    font-size: 2.4rem;
+    height: max-content;
+    padding: 2rem 1.2rem;
+  }
+  
+  .about .left img{
+    margin-left: 2.4rem;
+  }
+
+  .about .right{
+    align-items: center;
+  }
+
+  .about .right p{
+    width: 85%;
+    margin-bottom: 2.8rem;
+  }
+
+  .white_btn{
+    font-size: 1.6rem;
+    width: 15rem;
+    padding: 1.4rem 3.1rem 2rem 3.65rem;
+  }
+
+  .about .white_btn{
+    transform: translateX(50%);
+  }
+
+  /* menu */
+  .menu{
+    padding: 3.2rem 0 0;
+  }
+
+  .menu .title{
+    margin-bottom: 3.6rem;
+  }
+
+  .menu .title h3{
+    font-size: 1.2rem;
+    margin-left: .7rem;
+  }
+
+  .menu .title h2{
+    font-size: 2.4rem;
+  }
+
+  .menu .wrap{
+    flex-wrap: wrap;
+    margin-bottom: 3.2rem;
+  }
+
+  .menu .wrap > div{
+    width: 50%;
+    height: 16.5rem;
+  }
+
+  .menu .reserve{
+    margin-top: 3.2rem;
+    padding: 3.2rem 0;
+    background: url('/images/top/reserve_bg_sp.webp') no-repeat center center/cover;
+  }
+
+  .menu .reserve div{
+    width: 90%;
+  }
+
+  .menu .reserve h3{
+    font-size: 2.4rem;
+  }
+
+  .menu .reserve h3 span{
+    font-size: 3.2rem;
+  }
+
+  /* concept */
+  .concept{
+    padding: 5.7rem 0 9.7rem;
+  }
+
+  .concept .wrap{
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .concept .wrap div{
+    width: 100%;
+  }
+
+  .concept .wrap .left{
+    height: 38rem;
+  }
+
+  .concept .wrap .left h2{
+    font-size: 2.4rem;
+    padding: 2.2rem .8rem;
+    left: unset;
+    right: 0;
+    transform: none;
+  }
+
+  .concept .wrap .left img:nth-child(2){
+    left: 0;
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .concept .wrap .left img:nth-child(3){
+    width: 26rem;
+    height: 21.7rem;
+    left: unset;
+    right: 0;
+  }
+
+  .concept .wrap .right p{
+    width: 91%;
+  }
+
+  /* takeOut */
+  .takeOut{
+    margin: 0 auto 0 0;
+    width: 90%;
+    padding: 0 0 2.4rem;
+    position: relative;
+  }
+
+  .takeOut::before{
+    position: absolute;
+    content: '';
+    width: 29.2rem;
+    height: 16.6rem;
+    top: -6rem;
+    right: 0;
+    background: url('/images/top/takeout.webp') no-repeat center center/cover;
+  }
+
+  .takeOut .wrap{
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 10;
+  }
+
+  .takeOut .wrap > div{
+    width: 100%;
+  }
+
+  .takeOut .wrap .left{
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 1.7rem;
+  }
+
+  .takeOut .wrap .left .title {
+    margin-bottom: 7rem;
+    margin-left: 1.8rem;
+  }
+
+  .takeOut .wrap .left .title h2{
+    font-size: 2.4rem;
+    text-shadow: 0 .3rem .3rem rgba(0, 0, 0, 40%);
+  }
+
+  .takeOut .wrap .left .title h3{
+    font-size: 1.4rem;
+    text-shadow: 0 .3rem .3rem rgba(0, 0, 0, 40%);
+  }
+
+  .takeOut .wrap .left p{
+    line-height: 1.5;
+  }
+
+  .takeOut .wrap .right{
+    justify-content: flex-start;
+  }
+
+  /* news */
+  .news{
+    padding: 2.7rem 0 2.3rem;
+  }
+
+  .news .wrap{
+    width: 85%;
+  }
+
+  .news .wrap .title h2{
+    font-size: 1.8rem;
+  }
+
+  .news .wrap .title h3{
+    font-size: 1.2rem;
+    margin-left: .75rem;
+  }
+
+  .news .wrap .content{
+    margin: 3rem 0;
+  }
 }

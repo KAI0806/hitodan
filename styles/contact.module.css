@@ -1,0 +1,173 @@
+.kv{
+    height: 10.6rem;
+    background: url('/images/contact/kv.webp') no-repeat center center/cover;
+}
+
+.content01{
+    padding: 8rem 0 10rem;
+    margin: auto;
+    background: url('/images/top/about_bg.webp') no-repeat center center/cover;
+}
+
+.content01 .wrap{
+    width: 66%;
+    justify-content: space-between;
+}
+
+.content01 .wrap > div{
+    width: 45%;
+}
+
+.content01 .wrap .left {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content01 .wrap .left h2{
+    background: white;
+    padding: 8.6rem 2rem;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-family: shinryu, sans-serif;
+    font-size: 4.3rem;
+}
+
+.content01 .wrap .left p{
+    font-size: 4.3rem;
+    padding: 5rem;
+    font-family: shinryu, sans-serif;
+    color: white;
+    background: url('/images/contact/title_bg.webp') no-repeat center center/cover;
+}
+
+.content01 .wrap .right{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content01 .wrap .right p{
+    width: 78%;
+    line-height: 1.5;
+}
+
+/* content */
+.container{
+    padding: 12rem 0;
+    background: #F2EEE6;
+}
+
+.container form{
+    width: 46.875%;
+    padding: 8rem 10rem 4.8rem;
+    background: white;
+}
+
+.container form > div{
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+}
+
+.container form label{
+    color: #070707;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.container form input{
+    font-size: 2rem;
+    padding: 1.8rem .6rem;
+    background: #EFEFEF;
+}
+
+.container form textarea{
+    font-size: 2rem;
+    height: 25.5rem;
+    padding: 1.8rem .6rem;
+    background: #EFEFEF;
+}
+
+.container form #gotcha input{
+    background: none;
+}
+
+.container form button{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    width: 36rem;
+    padding: 2.4rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 50%);
+    background: linear-gradient(to bottom, #00955F, #008E5B, #015436);
+}
+
+@media screen and (max-width: 767px){
+    .kv{
+        height: 10.6rem;
+        background: url('/images/contact/kv_sp.webp') no-repeat center center/cover;
+    }
+
+    .content01{
+        padding: 2.4rem 0;
+    }
+
+    .content01 .wrap{
+        width: 85%;
+        flex-direction: column;
+    }
+
+    .content01 .wrap > div{
+        width: 100%;
+    }
+
+    .content01 .wrap .left{
+        margin-bottom: 1.8rem;
+    }
+
+    .content01 .wrap .left h2{
+        font-size: 2.4rem;
+        padding: 2rem 2.3rem;
+    }
+
+    .content01 .wrap .left p{
+        font-size: 2.4rem;
+        padding: 2.7rem;
+    }
+
+    .content01 .wrap .right{
+        align-items: center;
+    }
+
+    .container{
+        padding: 2.4rem 0;
+    }
+
+    .container form{
+        width: 85%;
+        padding: 2.8rem 2rem;
+        box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+    }
+
+    .container form label{
+        font-size: 2rem;
+    }
+
+    .container form input{
+        font-size: 1.6rem;
+        padding: 1.2rem .6rem;
+    }
+
+    .container form textarea{
+        height: 14rem;
+        font-size: 1.6rem;
+    }
+
+    .container form button{
+        width: 19.5rem;
+        padding: 1.4rem 0;
+    }
+
+    .container form > div:last-child{
+        margin-bottom: 0;
+    }
+}

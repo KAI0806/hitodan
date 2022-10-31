@@ -1,0 +1,179 @@
+.kv{
+    height: 10.6rem;
+    background: url('/images/news/kv.webp') no-repeat center center/cover;
+}
+
+.content01{
+    padding: 8rem 0 10rem;
+    margin: auto;
+    background: url('/images/top/about_bg.webp') no-repeat center center/cover;
+}
+
+.content01 .wrap{
+    width: 75%;
+    justify-content: space-between;
+}
+
+.content01 .wrap > div{
+    width: 45%;
+}
+
+.content01 .wrap .left {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.content01 .wrap .left h2{
+    background: white;
+    padding: 8.6rem 2rem;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-family: shinryu, sans-serif;
+    font-size: 4.3rem;
+    position: relative;
+}
+
+.content01 .wrap .left h2::before{
+    position: absolute;
+    content: '各種お知らせについて';
+    font-size: 2.4rem;
+    top: 0;
+    right: -50%;
+    transform: translate(100%, 50%);
+    z-index: 10;
+}
+
+.content01 .wrap .left img{
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+}
+
+.content01 .wrap .right{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content01 .wrap .right p{
+    width: 78%;
+    line-height: 1.5;
+}
+
+/* コンテンツ */
+.container{
+    margin: auto;
+    padding: 9.6rem 0 9.65rem;
+    background: #F2EEE6;
+}
+
+.container .wrap{
+    width: 70%;
+    justify-content: space-between;
+}
+
+.container .wrap .content{
+    width: 30%;
+}
+
+.container .wrap .content div{
+    background: white;
+    padding: 5.45rem 4.6rem 6.4rem;
+}
+
+.container .wrap .content div h3{
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+    position: relative;
+}
+
+.container .wrap .content div h3::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 70%;
+    width: 5.4rem;
+    height: .1rem;
+    border-bottom: .1rem dashed #3c3c3c;
+}
+
+.container .wrap .content div p{
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 767px){
+    .kv{
+        height: 10.6rem;
+        background: url('/images/news/kv_sp.webp') no-repeat center center/cover;
+    }
+
+    .content01{
+        padding: 5.4rem 0 3.6rem;
+    }
+
+    .content01 .wrap{
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .content01 .wrap > div{
+        width: 100%;
+    }
+
+    .content01 .wrap .left{
+        margin-bottom: 3.2rem;
+    }
+
+    .content01 .wrap .left h2{
+        font-size: 2.4rem;
+        padding: 2rem 1rem;
+    }
+
+    .content01 .wrap .left h2::before{
+        font-size: 1.2rem;
+        top: 0;
+        transform: translate(100%, 25%);
+    }
+
+    .content01 .wrap .left img{
+        width: 21.1rem;
+        height: 15.9rem;
+    }
+
+    .content01 .wrap .right p{
+        width: 100%;
+    }
+
+    .content01 .wrap .right h3{
+        font-size: 2.4rem;
+        margin: 4rem 0 1.8rem;
+    }
+
+    .content01 .wrap .right h3::before{
+        width: 50%;
+    }
+
+    .container{
+        padding: 1.4rem 0 3.2rem;
+    }
+
+    .container .wrap{
+        width: 85%;
+        flex-wrap: wrap;
+    }
+
+    .container .wrap .content{
+        width: 100%;
+        margin-bottom: 3.2rem;
+        box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 16%);
+    }
+
+    .container .wrap .content div{
+        padding: 3.2rem 2.3rem;
+    }
+
+    .container .wrap .content div h3{
+        margin-bottom: 1rem;
+    }
+
+    .container .wrap .content div h3::before{
+        left: 75%;
+    }
+}
