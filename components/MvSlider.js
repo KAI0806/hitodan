@@ -22,16 +22,16 @@ export default function mvSlider() {
     return (
       <Slider className="mv_slider" {...settings}>
             <div>
-                <Image className="pc_only" src="/images/top/mv_bg01.webp" width='auto' height='100%'/>
-                <Image className="sp_only" src="/images/top/mv_bg01_sp.webp" width='auto' height='100%'/>
+                <Image className="pc_only" src="/images/top/mv_bg01.webp" alt="トップスライダー" width='auto' height='100%'/>
+                <Image className="sp_only" src="/images/top/mv_bg01_sp.webp" alt="トップスライダー" width='auto' height='100%'/>
             </div>
             <div>
-                <Image className="pc_only" src="/images/top/mv_bg02.webp" width='auto' height='100%'/>
-                <Image className="sp_only" src="/images/top/mv_bg02_sp.webp" width='auto' height='100%'/>
+                <Image className="pc_only" src="/images/top/mv_bg02.webp" alt="トップスライダー" width='auto' height='100%'/>
+                <Image className="sp_only" src="/images/top/mv_bg02_sp.webp" alt="トップスライダー" width='auto' height='100%'/>
             </div>
             <div>
-                <Image className="pc_only" src="/images/top/mv_bg03.webp" width='auto' height='100%'/>
-                <Image className="sp_only" src="/images/top/mv_bg03_sp.webp" width='auto' height='100%'/>
+                <Image className="pc_only" src="/images/top/mv_bg03.webp" alt="トップスライダー" width='auto' height='100%'/>
+                <Image className="sp_only" src="/images/top/mv_bg03_sp.webp" alt="トップスライダー" width='auto' height='100%'/>
             </div>
       </Slider>
     );

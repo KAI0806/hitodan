@@ -2,7 +2,6 @@ import { Center, Flex, Image } from "@chakra-ui/react";
 import Head from "next/head";
 import styles from '../../styles/contact.module.css'
 import Reserve from "../../components/Reserve";
-import Script from "next/script";
 
 export default function Contact(){
     return (
@@ -13,8 +12,6 @@ export default function Contact(){
                 <meta property="og:title" content="お問合せ｜やきとり＆美味しいお酒｜人暖楽" />
                 <meta property="og:site_name" content="お問合せ｜やきとり＆美味しいお酒｜人暖楽" />
                 <meta name="twitter:title" content="お問合せ｜やきとり＆美味しいお酒｜人暖楽" />
-
-                <Script id="formrun" src="https://sdk.form.run/js/v2/formrun.js"></Script>
             </Head>
 
             <main>

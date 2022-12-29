@@ -30,13 +30,13 @@ export default function FooterSlider() {
     return (
       <Slider className="footer_slider" {...settings}>
             <div>
-                <Image src="/images/common/footer_slide.webp" width='auto' height='100%'/>
+                <Image src="/images/common/footer_slide.webp" alt="串" width='auto' height='100%'/>
             </div>
             <div>
-                <Image src="/images/common/footer_slide.webp" width='auto' height='100%'/>
+                <Image src="/images/common/footer_slide.webp" alt="串" width='auto' height='100%'/>
             </div>
             <div>
-                <Image src="/images/common/footer_slide.webp" width='auto' height='100%'/>
+                <Image src="/images/common/footer_slide.webp" alt="串" width='auto' height='100%'/>
             </div>
       </Slider>
     );
